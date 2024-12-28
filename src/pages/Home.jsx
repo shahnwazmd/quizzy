@@ -10,10 +10,8 @@ import {
 const Home = () => {
 
     const categories = [
-        {name:'Technology',id:1,icon:'https://cdn-icons-png.flaticon.com/512/4257/4257483.png'},
-        {name:'Nature',id:2,icon:'https://cdn-icons-png.flaticon.com/512/2823/2823511.png'},
-        {name:'Politics',id:3,icon:'https://static.thenounproject.com/png/955295-200.png'},
-        {name:'Sports',id:4,icon:'https://cdn-icons-png.flaticon.com/512/857/857492.png'},
+        {name:'placement prep',id:1,icon:'https://cdn-icons-png.flaticon.com/512/1055/1055672.png'},
+        
     ];
 
     return (
@@ -22,7 +20,7 @@ const Home = () => {
             <CardTitle>Select Category to Play</CardTitle>
         </CardHeader>
         <CardContent>
-            <div className='w-[400px] grid grid-cols-2 gap-4'>
+            <div className='w-[400px] grid grid-cols-1 gap-0'>
             
             {categories.map((x,i) => {
                 return <Link key={i} to='/quiz' className='flex flex-col border hover:border-gray-200 justify-center rounded p-3 items-center bg-[rgba(255,255,255,0.5)]'>
